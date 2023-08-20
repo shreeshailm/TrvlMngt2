@@ -25,12 +25,12 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-
-@Entity
-@Table(name = "food")
-@Getter
-@Setter
-@NoArgsConstructor
+//
+//@Entity
+//@Table(name = "food")
+//@Getter
+//@Setter
+//@NoArgsConstructor
 public class Food{
 	
 	@Id

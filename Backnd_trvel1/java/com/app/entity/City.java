@@ -66,6 +66,9 @@ public class City {
 //	@JsonIgnore
 //	@OneToMany(mappedBy = "city" ,cascade = CascadeType.ALL, 
 //			orphanRemoval = true)
+	
+	
+	
 	@OneToMany(fetch = FetchType.EAGER)
 	//@JsonIgnore
 	private Set<Hotel> assignhotel = new HashSet<Hotel>();

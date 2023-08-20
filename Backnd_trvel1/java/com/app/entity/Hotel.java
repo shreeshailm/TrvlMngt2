@@ -47,16 +47,16 @@ public class Hotel{
 	
 	private String hotelDescription;
 	
-	private Long cityId;
+	
 	
 	@ManyToOne(fetch = FetchType.EAGER)
-	//@JoinColumn(name = "city_id")
+	@JoinColumn(name = "city_id")
 	@JsonIgnore
 	private City city;
 	
-	@JsonIgnore
-	@OneToMany
-	private List<Food> food = new ArrayList<Food>();
+//	@JsonIgnore
+//	@OneToMany
+//	private List<Food> food = new ArrayList<Food>();
 
 	@JsonIgnore
 	@OneToMany
